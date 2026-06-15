@@ -1,0 +1,16 @@
+[Bb]in/
+[Oo]bj/
+.vs/
+.idea/
+
+*.user
+*.suo
+
+Library/
+Temp/
+Logs/
+
+*.csproj.user
+
+AssetBundles/
+*.meta
