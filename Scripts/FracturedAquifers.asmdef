@@ -1,0 +1,23 @@
+{
+  "name": "FracturedAquifers",
+  "rootNamespace": "FracturedAquifers",
+  "references": [
+    "Bindito.Core",
+    "Timberborn.BaseComponentSystem",
+    "Timberborn.NaturalResourcesMoisture",
+    "Timberborn.NaturalResourcesMoistureUI",
+    "Timberborn.StatusSystem",
+    "Timberborn.WaterObjects",
+    "Timberborn.WaterSystem",
+    "0Harmony"
+  ],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}

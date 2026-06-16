@@ -1,0 +1,9 @@
+{
+  "Name": "Fractured Aquifers",
+  "Version": "1.0.0.0",
+  "Id": "97cweb.FracturedAquifers",
+  "MinimumGameVersion": "1.0.0.0",
+  "Description": "Increase water flow of all sources. This adds buildings that can be placed on the water sources to change their flow rate",
+  "RequiredMods": [],
+  "OptionalMods": []
+}
