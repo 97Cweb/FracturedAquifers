@@ -7,14 +7,6 @@ namespace FracturedAquifers
 {
     public class FractureChargePlacementValidator : IBlockObjectValidator
     {
-        private static readonly HashSet<string> AllowedTemplates = new()
-        {
-            "Aquifer",
-            "WaterSource",
-            "WaterSeep",
-            "BadwaterSource",
-            "BadwaterSeep"
-        };
 
         private readonly IBlockService _blockService;
 
@@ -33,14 +25,7 @@ namespace FracturedAquifers
 
             foreach (Block block in blockObject.PositionedBlocks.GetFoundationBlocks())
             {
-                Debug.Log("[FracturedAquifers] Checking coord " + block.Coordinates);
-                if (HasAllowedSourceAt(block.Coordinates))
-                {
-                    errorMessage = null;
-                    return true;
-                }
-
-                if (HasAllowedSourceAt(block.Coordinates + Vector3Int.back))
+                if (SourceLocator.HasAllowedSourceAtFoundation(_blockService, block))
                 {
                     errorMessage = null;
                     return true;
@@ -48,30 +33,6 @@ namespace FracturedAquifers
             }
 
             errorMessage = "Must be built on a water source, seep, badwater source, badwater seep, or aquifer.";
-            return false;
-        }
-
-        private bool HasAllowedSourceAt(Vector3Int coordinates)
-        {
-            foreach (BlockObject obj in _blockService.GetObjectsAt(coordinates))
-            {
-                TemplateSpec template = obj.GetComponent<TemplateSpec>();
-
-                if (template == null)
-                {
-                    continue;
-                }
-
-                foreach (string allowed in AllowedTemplates)
-                {
-                    if (template.IsNamed(allowed))
-                    {
-                        Debug.Log("[FracturedAquifers] Found " + template.TemplateName + " at " + coordinates);
-                        return true;
-                    }
-                }
-            }
-
             return false;
         }
     }

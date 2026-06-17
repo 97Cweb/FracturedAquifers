@@ -1,4 +1,10 @@
 ID,Text,Comment
 Building.FractureCharge.DisplayName,Fracture Charge,
-Building.FractureCharge.Description,Blows up inside the water source to change its output,
-Building.FractureCharge.FlavorDescription,"Some one thought, why not just dump a pile of explosives down a hole and see what happens",
+Building.FractureCharge.Description,"Blows up inside the water source to increase its output, maybe. Hopefully?",
+Building.FractureCharge.FlavorDescription,Why not just dump a pile of explosives down a hole and see what happens?,
+Building.CollapseCharge.DisplayName,Collapse Charge,
+Building.CollapseCharge.Description,Blows up inside the water source to plug it.,
+Building.CollapseCharge.FlavorDescription,Who needs this water anyway?,
+Building.CatalyticCharge.DisplayName,Catalytic Charge,
+Building.CatalyticCharge.Description,Blows up inside the water source to increase its output a lot.,
+Building.CatalyticCharge.FlavorDescription,"More water = More better, right?",

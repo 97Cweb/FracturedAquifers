@@ -8,16 +8,19 @@
         "Amount": 50
       },
       {
+        "Id": "Dirt",
+        "Amount": 100
+      },
+      {
         "Id": "Explosives",
-        "Amount": 100 
+        "Amount": 200
       },
       {
         "Id": "Extract",
-        "Amount":100
+        "Amount": 500
       }
-      
     ],
-    "ScienceCost": 1500,
+    "ScienceCost": 4000,
     "PlaceFinished": false,
     "FinishableWithBeaversOnSite": true,
     "DrawRangeBoundsOnIt": true
@@ -31,7 +34,7 @@
     "UndergroundModelDepth": 0
   },
   "TemplateSpec": {
-    "TemplateName": "FractureCharge.Folktails",
+    "TemplateName": "CollapseCharge.Folktails",
     "BackwardCompatibleTemplateNames": [],
     "RequiredFeatureToggle": "",
     "DisablingFeatureToggle": ""
@@ -64,9 +67,9 @@
     "Flippable": false
   },
   "FractureChargeSpec": {
-    "MinMultiplier": 0.4,
-    "MaxMultiplier": 1.6,
-    "Distribution": "U"
+    "MinMultiplier": 0.0,
+    "MaxMultiplier": 0.5,
+    "Distribution": "SkewLeft"
   },
   "DynamiteSpec": {
     "Depth": 0,
@@ -81,7 +84,7 @@
   },
   "PlaceableBlockObjectSpec": {
     "ToolGroupId": "Landscaping",
-    "ToolOrder": 110,
+    "ToolOrder": 111,
     "ToolShape": "Square",
     "Layout": "Single",
     "CustomPivot": {
@@ -96,10 +99,10 @@
     "DevModeTool": false
   },
   "LabeledEntitySpec": {
-    "DisplayNameLocKey": "Building.FractureCharge.DisplayName",
-    "DescriptionLocKey": "Building.FractureCharge.Description",
-    "FlavorDescriptionLocKey": "Building.FractureCharge.FlavorDescription",
-    "Icon": "Buildings/Landscaping/FractureCharge/FractureChargeIcon"
+    "DisplayNameLocKey": "Building.CollapseCharge.DisplayName",
+    "DescriptionLocKey": "Building.CollapseCharge.Description",
+    "FlavorDescriptionLocKey": "Building.CollapseCharge.FlavorDescription",
+    "Icon": "Buildings/Landscaping/CollapseCharge/CollapseChargeIcon"
   },
   "ConstructionSiteProgressVisualizerSpec": {
     "ProgressThresholds": [
@@ -109,7 +112,7 @@
   "Children": {
     "#Finished": {
       "TimbermeshSpec": {
-        "Model": "Buildings/Landscaping/FractureCharge/FractureCharge.Folktails.Model"
+        "Model": "Buildings/Landscaping/CollapseCharge/CollapseCharge.Folktails.Model"
       },
       "CollidersSpec": {
         "BoxColliders": [],

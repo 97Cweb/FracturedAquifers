@@ -1,4 +1,9 @@
 using Bindito.Core;
+
+using HarmonyLib;
+
+using UnityEngine;
+
 using Timberborn.BlockSystem;
 using Timberborn.TemplateInstantiation;
 
@@ -9,6 +14,13 @@ namespace FracturedAquifers
     {
         protected override void Configure()
         {
+
+            var harmony = new Harmony("97cweb.FracturedAquifers");
+            harmony.PatchAll();
+
+            Debug.Log("[FracturedAquifers] Harmony PatchAll called.");
+
+
             MultiBind<IBlockObjectValidator>()
                 .To<FractureChargePlacementValidator>()
                 .AsSingleton();
@@ -30,5 +42,7 @@ namespace FracturedAquifers
 
             return builder.Build();
         }
+
+        
     }
 }
