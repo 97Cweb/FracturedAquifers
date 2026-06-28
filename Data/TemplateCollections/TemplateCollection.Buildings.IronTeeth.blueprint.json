@@ -2,9 +2,9 @@
   "TemplateCollectionSpec": {
     "CollectionId": "Buildings.IronTeeth",
     "Blueprints#append": [
-      "Buildings/Landscaping/FractureCharge/FractureCharge.Folktails.blueprint",
-      "Buildings/Landscaping/CollapseCharge/CollapseCharge.Folktails.blueprint",
-      "Buildings/Landscaping/CatalyticCharge/CatalyticCharge.Folktails.blueprint"
+      "Buildings/Landscaping/FractureCharge/FractureCharge.IronTeeth.blueprint",
+      "Buildings/Landscaping/CollapseCharge/CollapseCharge.IronTeeth.blueprint",
+      "Buildings/Landscaping/CatalyticCharge/CatalyticCharge.IronTeeth.blueprint"
     ]
   }
 }
