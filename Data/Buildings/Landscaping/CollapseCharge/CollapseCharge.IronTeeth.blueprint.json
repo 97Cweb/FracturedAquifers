@@ -8,16 +8,16 @@
         "Amount": 50
       },
       {
+        "Id": "Dirt",
+        "Amount": 100
+      },
+      {
         "Id": "Explosives",
         "Amount": 200
       },
       {
         "Id": "Extract",
         "Amount": 500
-      },
-      {
-        "Id": "Catalyst",
-        "Amount": 200
       }
     ],
     "ScienceCost": 4000,
@@ -34,7 +34,7 @@
     "UndergroundModelDepth": 0
   },
   "TemplateSpec": {
-    "TemplateName": "CatalyticCharge.Folktails",
+    "TemplateName": "CollapseCharge.Ironteeth",
     "BackwardCompatibleTemplateNames": [],
     "RequiredFeatureToggle": "",
     "DisablingFeatureToggle": ""
@@ -67,9 +67,9 @@
     "Flippable": false
   },
   "FractureChargeSpec": {
-    "MinMultiplier": 1.0,
-    "MaxMultiplier": 3.0,
-    "Distribution": "SkewRight"
+    "MinMultiplier": 0.0,
+    "MaxMultiplier": 0.5,
+    "Distribution": "SkewLeft"
   },
   "DynamiteSpec": {
     "Depth": 0,
@@ -84,7 +84,7 @@
   },
   "PlaceableBlockObjectSpec": {
     "ToolGroupId": "Landscaping",
-    "ToolOrder": 112,
+    "ToolOrder": 111,
     "ToolShape": "Square",
     "Layout": "Single",
     "CustomPivot": {
@@ -99,10 +99,10 @@
     "DevModeTool": false
   },
   "LabeledEntitySpec": {
-    "DisplayNameLocKey": "Building.CatalyticCharge.DisplayName",
-    "DescriptionLocKey": "Building.CatalyticCharge.Description",
-    "FlavorDescriptionLocKey": "Building.CatalyticCharge.FlavorDescription",
-    "Icon": "Buildings/Landscaping/CatalyticCharge/CatalyticChargeIcon"
+    "DisplayNameLocKey": "Building.CollapseCharge.DisplayName",
+    "DescriptionLocKey": "Building.CollapseCharge.Description",
+    "FlavorDescriptionLocKey": "Building.CollapseCharge.FlavorDescription",
+    "Icon": "Buildings/Landscaping/CollapseCharge/CollapseChargeIcon"
   },
   "ConstructionSiteProgressVisualizerSpec": {
     "ProgressThresholds": [
@@ -112,7 +112,7 @@
   "Children": {
     "#Finished": {
       "TimbermeshSpec": {
-        "Model": "Buildings/Landscaping/CatalyticCharge/CatalyticCharge.Folktails.Model"
+        "Model": "Buildings/Landscaping/CollapseCharge/CollapseCharge.IronTeeth.Model"
       },
       "CollidersSpec": {
         "BoxColliders": [],
@@ -138,7 +138,7 @@
         },
         "ConstructionStage0": {
           "TimbermeshSpec": {
-            "Model": "Buildings/Landscaping/Dynamite/Dynamite.Folktails.ConstructionStage0.Model"
+            "Model": "Buildings/Landscaping/Dynamite/Dynamite.IronTeeth.ConstructionStage0.Model"
           },
           "CollidersSpec": {
             "BoxColliders": [],

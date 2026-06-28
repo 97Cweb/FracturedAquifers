@@ -16,7 +16,7 @@
         "Amount": 500
       },
       {
-        "Id": "Catalyst",
+        "Id": "Grease",
         "Amount": 200
       }
     ],
@@ -34,7 +34,7 @@
     "UndergroundModelDepth": 0
   },
   "TemplateSpec": {
-    "TemplateName": "CatalyticCharge.Folktails",
+    "TemplateName": "CatalyticCharge.IronTeeth",
     "BackwardCompatibleTemplateNames": [],
     "RequiredFeatureToggle": "",
     "DisablingFeatureToggle": ""
@@ -112,7 +112,7 @@
   "Children": {
     "#Finished": {
       "TimbermeshSpec": {
-        "Model": "Buildings/Landscaping/CatalyticCharge/CatalyticCharge.Folktails.Model"
+        "Model": "Buildings/Landscaping/CatalyticCharge/CatalyticCharge.IronTeeth.Model"
       },
       "CollidersSpec": {
         "BoxColliders": [],
@@ -138,7 +138,7 @@
         },
         "ConstructionStage0": {
           "TimbermeshSpec": {
-            "Model": "Buildings/Landscaping/Dynamite/Dynamite.Folktails.ConstructionStage0.Model"
+            "Model": "Buildings/Landscaping/Dynamite/Dynamite.Ironteeth.ConstructionStage0.Model"
           },
           "CollidersSpec": {
             "BoxColliders": [],
